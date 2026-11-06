@@ -1,0 +1,13 @@
+{% extends "admin/index.html" %}
+
+{% block content %}
+<div class="module" style="margin-bottom: 20px;">
+  <h2>Resumen</h2>
+  <table style="width: 100%;">
+    <tr><th>Usuarios</th><td>{{ users_count }}</td></tr>
+    <tr><th>Workspaces</th><td>{{ workspaces_count }}</td></tr>
+    <tr><th>Mensajes</th><td>{{ messages_count }}</td></tr>
+  </table>
+</div>
+{{ block.super }}
+{% endblock %}
